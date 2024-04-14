@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "qqmap-wx-jssdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "mockjs": "^1.1.0"
+  }
+}

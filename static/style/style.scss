@@ -1,0 +1,86 @@
+@import 'static/style/variables.scss';
+@import 'static/style/mixins.scss';
+@import 'static/style/index.scss';
+@import 'static/style/flex.scss';
+@import 'static/style/common.scss';
+
+.bg-fff {
+	background-color: #fff;
+}
+
+.bg-F8F8F8 {
+	background: $default-bg-color;
+}
+
+.box-shadow {
+	box-shadow: 0 3rpx 4rpx rgba($color: #000000, $alpha: 0.05);
+}
+
+.top-shadow {
+	box-shadow: 0 3rpx 10rpx rgba($color: #000000, $alpha: 0.15);
+}
+
+.color {
+	color: $font-color;
+	&.main {
+		color: $theme-color;
+	}
+	&.white {
+		color: #FFFFFF;
+	}
+}
+.c9 {
+	color: #999;
+}
+.c6 {
+	color: #999;
+}
+.main-color {
+	color: $theme-color;
+}
+.c-blue {
+	color: $blue-color;
+}
+.c-white {
+	color: #FFFFFF;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+/*超出部分省略号*/
+.job-inline {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+}
+
+.bottom-line {
+	border-bottom: 1rpx solid $border-color;
+}
+
+/*通用按钮属性*/
+.job-button {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	@include flex();
+  
+	&.normal {
+		background: $normal-color;
+		border: 1rpx solid $border-color;
+		color: $font-color;
+	}
+	
+	// 主要按钮 主题色按钮
+  &.primary {
+    background: $primary-color;
+  }
+
+  &.lq-success {
+    background: $success-color;
+  }
+}
